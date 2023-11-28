@@ -1,0 +1,800 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter'
+}
+
+
+/* NavBar */
+.topnav {
+    background-color: #fff;
+    position: fixed;
+    width: 100vw;
+    height: 60px;
+    top: 0;
+    z-index: 10;
+}
+
+.topnav img {
+    float: left;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #007bff;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 0%;
+}
+
+.topnav .homeNav {
+    padding-left: 35%;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+        margin-top: 10px;
+    }
+
+    .topnav.responsive {
+        position: fixed;
+        display: block;
+    }
+
+    .topnav.responsive .icon {
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive img {
+        display: none;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        background-color: #fff;
+    }
+
+    .topnav.responsive .homeNav {
+        padding: 0%;
+        padding: 20px 30px;
+        padding-top: 33px;
+    }
+}
+
+
+/* Hero Page */
+#heroPage {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 15%;
+    gap: 80px;
+
+}
+
+#heroPage .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+
+}
+
+#heroPage .content h1 {
+    color: #094FB7;
+
+}
+
+#heroPage .content p {
+    font-size: 17px;
+}
+
+#heroPage .content button {
+    background: #094FB7;
+    border-radius: 999px;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+}
+#heroPage .image{
+    width: 150%;
+}
+@media screen and (max-width:600px) {
+    #heroPage {
+        height: auto;
+        flex-direction: column-reverse;
+        padding: 0px 40px;
+        gap: 20px;
+
+    }
+    #heroPage .image{
+        padding-top: 60px;
+    }
+    #heroPage .content {
+        gap: 20px;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/* Internship */
+#internship {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 60px;
+    overflow: hidden;
+}
+
+#internship .intern {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+#internship .intern .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+    gap: 20px;
+    width: 80%;
+}
+
+#internship .content .catchy {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#internship .applyCard {
+    display: grid;
+    align-items: center;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    gap: 30px;
+    padding-right: 10%;
+}
+
+#internship .applyCard .card {
+    padding: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    border-radius: 30px;
+}
+
+#internship .applyCard .card .icon {
+    font-size: 25px;
+    padding: 5px;
+    color: #094FB7;
+    background-color: #c9d8f1;
+    width: fit-content;
+    border-radius: 5px;
+}
+
+#internship .applyCard .card button {
+    background: #094FB7;
+    border-radius: 999px;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+}
+
+#internship .applyCard .card:hover {
+    background-color: #F0F5FF;
+}
+
+@media screen and (max-width:600px) {
+    #internship {
+        height: auto;
+        padding-top: 40px;
+    }
+
+    #internship .intern {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #internship .intern .content {
+        align-items: center;
+        text-align: center;
+        padding-left: 0%;
+        width: 90%;
+    }
+
+    #internship .applyCard {
+        display: flex;
+        flex-direction: column;
+        padding-right: 0%;
+        padding: 10px;
+    }
+}
+
+/* Testimonial */
+#Testimonials {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#Testimonials .intro {
+    height: 40vh;
+    padding: 5px 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+#Testimonials .intro .content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+    justify-content: center;
+    text-align: justify;
+    gap: 20px;
+}
+
+#Testimonials .testimonials {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#Testimonials .testimonials .content {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#Testimonials .testimonials .testimonialBlocks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 0% 50px;
+}
+
+#Testimonials .testimonials .testimonialBlocks .block {
+    padding: 20px;
+    justify-content: center;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#Testimonials .testimonials .testimonialBlocks .block h3 {
+    color: #094FB7;
+}
+
+#Testimonials .testimonials .testimonialBlocks .block h4 {
+    font-size: small;
+}
+#Testimonials .testimonials .testimonialBlocks .block p {
+    line-height: 25px;
+}
+
+
+@media screen and (max-width:600px) {
+    #Testimonials {
+        height: auto;
+    }
+
+    #Testimonials .intro {
+        height: auto;
+        padding: 5px 10%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+
+    #Testimonials .intro .content {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0px;
+        text-align: center;
+    }
+
+    #Testimonials .testimonials {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    #Testimonials .testimonials .testimonialBlocks {
+        flex-direction: column;
+    }
+}
+
+#contactForm {
+    height: auto;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.bg {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(9, 79, 183);
+    transform: skew(0deg, -5deg);
+    transform-origin: bottom left;
+
+
+}
+
+.bcontent1 {
+    justify-content: center;
+    padding-top: 110px;
+    color: white;
+    transform: skew(0deg, 5deg);
+    padding-left: 143px;
+
+
+}
+
+
+.blines1 h2 {
+    font-size: 28px;
+    line-height: 30px;
+    margin-bottom: 23px;
+}
+
+.blines1 h5 {
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+
+.blines2 h4 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.sub {
+    position: relative;
+    height: 28px;
+    width: 310px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    gap: 12px;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 9px;
+
+
+}
+
+.sub input {
+    border: none;
+    height: 25px;
+    width: 200px;
+    outline: none;
+}
+
+.sub i {
+    position: relative;
+    z-index: 1;
+    color: rgb(59, 80, 185);
+    font-weight: 1000px;
+    font-size: 15px;
+}
+
+.sub button {
+    background-color: rgb(9, 79, 183);
+    color: white;
+    border: none;
+    height: 18px;
+    width: 60px;
+    border-radius: 3px;
+}
+
+.blines3 .bmail {
+    height: 40px;
+    width: 40px;
+    border-radius: 32px;
+    background-color: rgba(78, 125, 196, 0.3);
+
+}
+
+.bmail i {
+    padding-left: 11px;
+    padding-top: 12px;
+
+
+}
+
+.blines2 {
+    margin-bottom: 25px;
+}
+
+.blines3 {
+    display: flex;
+}
+
+.innermail {
+    margin-left: 15px;
+    margin-top: 1px;
+    line-height: 18px;
+}
+
+.innermail #p1 {
+    font-size: 13px;
+    font-weight: 100;
+}
+
+.blines3 {
+    margin-bottom: 0px;
+}
+
+.bconnect {
+    display: flex;
+    gap: 8px;
+}
+
+.bconnect hr {
+    margin-top: 10px;
+    width: 22px;
+}
+
+.fb {
+    height: 27px;
+    width: 27px;
+    background-color: rgba(78, 125, 196, 0.3);
+    border-radius: 50px;
+
+}
+
+.fb i {
+    padding-left: 6px;
+    padding-top: 4px;
+
+}
+
+.bicons {
+    display: flex;
+    gap: 10px;
+}
+
+
+
+.box {
+    height: 33px;
+    width: 33px;
+    background-color: rgba(78, 125, 196, 0.3);
+    border-radius: 5px;
+    transform: rotate(12deg);
+    margin-left: 33px;
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: 33px 33px;
+    gap: 3px;
+
+
+}
+
+.icon-boxes {
+    display: flex;
+    gap: 7px;
+}
+
+.b4col1 {
+    display: flex;
+}
+
+.bcontent2 {
+
+    margin-top: 170px;
+    margin-left: 100px;
+    width: 530px;
+    height: 400px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+
+    transform: skew(0deg, 5deg);
+
+}
+
+.footer-form {
+    padding: 18px;
+    line-height: 39px;
+    font-size: 15px;
+}
+
+.footer-form p {
+    line-height: 20px;
+
+}
+
+.name-phone {
+    display: flex;
+    gap: 18px;
+
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+}
+
+.name input {
+    height: 25px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    outline: none;
+}
+
+.phone {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+
+}
+
+.phone input {
+    height: 25px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    outline: none;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+
+
+}
+
+.email input {
+    height: 25px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    outline: none;
+}
+
+.msg {
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+
+}
+
+.msg input {
+    height: 50px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    padding-bottom: 0px;
+    outline: none;
+}
+
+.req-btn {
+    width: 150px;
+    height: 25px;
+    background-color: rgb(9, 79, 183);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    margin-top: 12px;
+
+}
+#footer {
+    background-color: #fff;
+    color: #000;
+    padding-top: 30px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+}
+
+#footer a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+@media screen and (max-width:600px) {
+    .bsection4 {
+        height: 175vh;
+        transform: skew(0deg, 0deg);
+
+    }
+
+    .b4col1 {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .bcontent1 {
+        justify-content: center;
+        padding-top: 40px;
+        color: white;
+        transform: skew(0deg, 0deg);
+        padding-left: 30px;
+
+    }
+
+
+    .bg {
+        width: 100%;
+        height: 90vh;
+        background-color: rgb(9, 79, 183);
+        transform: skew(0deg, 0deg);
+    }
+
+    .blines1 h2 {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 19px;
+    }
+
+    .blines1 h5 {
+        margin-bottom: 19px;
+        font-weight: 100;
+    }
+
+    .blines2 h4 {
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    .blines3 {
+        margin-bottom: 0px;
+    }
+
+    .bcontent2 {
+
+        margin-top: 50px;
+        margin-left: 15px;
+        width: 400px;
+
+        background-color: white;
+        color: black;
+        border-radius: 20px;
+
+        height: auto;
+        transform: skew(0deg, 0deg);
+
+    }
+
+    .footer-form {
+
+        line-height: 27px;
+        font-size: 15px;
+
+
+    }
+
+    .footer-form p {
+        line-height: 20px;
+
+    }
+
+    .name-phone {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        margin-top: 10px;
+    }
+
+    .name {
+
+        width: 210px;
+    }
+
+    .name input {
+        height: 25px;
+        border: 1px solid grey;
+        border-radius: 3px;
+        outline: none;
+
+    }
+
+    .phone {
+        display: flex;
+        flex-direction: column;
+        width: 210px;
+        gap: 0px;
+
+    }
+
+    .phone input {
+        height: 25px;
+        border: 1px solid grey;
+        border-radius: 3px;
+        outline: none;
+    }
+
+    .email {
+        display: flex;
+        flex-direction: column;
+        width: 210px;
+
+
+    }
+
+    .email input {
+        height: 25px;
+
+    }
+
+    .msg input {
+        height: 50px;
+        width: 210px;
+    }
+
+    .req-btn {
+        width: 140px;
+        height: 35px;
+
+    }
+}

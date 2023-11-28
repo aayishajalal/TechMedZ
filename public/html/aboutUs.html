@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechMedZ - About Us</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../css/aboutUs.css" />
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <img src="../asserts/logo.png" />
+      <a onclick="redirectTo('/')" class="homeNav">Home</a>
+      <a onclick="redirectTo('/aboutUs')" style="color: #007bff;">About Us</a>
+      <a onclick="redirectTo('/internship')" style="color: #007bff;">Join Us</a>
+      <a href="#footer">Contact Us</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div id="heroPage">
+      <div class="heroLeft">
+        <img src="../asserts/main.png" alt="" srcset="" />
+      </div>
+      <div class="heroContent">
+        <div class="catchy">
+          Bridging Horizons,<br />
+          Healing Futures
+        </div>
+        <div class="des">
+          At TechMedZ Labs, innovation isn't just a buzzword; it's the force
+          propelling us into a future where healthcare is redefined. More than a
+          startup, we're a force of change, passionately pioneering solutions
+          that transform the landscape of well-being. Join us on this artistic
+          journey as we paint a picture of a healthier, more vibrant world.
+        </div>
+        <div class="exploreBtn">
+          <button onclick="scrollToNextSection()">
+            Explore <i class="fas fa-angle-right"></i>
+          </button>
+        </div>
+      </div>
+      <div class="heroRight">
+        <img src="../asserts/subMain.png" alt="" srcset="" />
+      </div>
+    </div>
+
+    <div id="missionVision">
+      <div class="missionVision">
+        <div id="vision">
+          <img src="../asserts/vision.png" alt="" srcset="" />
+          <div class="content">
+            <h2>Vision of Our Company</h2>
+            <p>
+              TechMedZ envisions a transformative approach to address the
+              persistent challenges and criticism surrounding donor organ
+              availability in India. Leveraging cutting-edge Biofabrication
+              Technology, our vision is to revolutionize organ transplantation
+              by reducing dependence on traditional donor sources. By pioneering
+              innovative solutions, we aim to create biofabricated organs that
+              are not only readily available but also ethically and sustainably
+              produced. Through this vision, TechMedZ strives to reshape the
+              narrative of organ transplantation in India, ensuring a future
+              where advanced biotechnological solutions alleviate the burden on
+              donors and offer new hope to those in need.
+            </p>
+          </div>
+        </div>
+        <br />
+        <div id="mission">
+          <div class="content">
+            <h2>Mission of Our Company</h2>
+            <p>
+              TechMedZ is on a mission to pioneer biofabrication innovation in
+              India. We aim to create a versatile bioink formula for high cell
+              viability, develop a cutting-edge Made in India bio printer with
+              AI-based cell monitoring, and 3D print biocompatible prosthetics.
+              Our state-of-the-art Center for Excellence in Biofabrication will
+              introduce advanced equipment, and we aspire to print functional
+              human organs for diverse applications. Additionally, we aim to
+              represent India in global collaborations for advancements in
+              Biotechnology and Medical Science.
+            </p>
+          </div>
+          <img src="../asserts/mission.png" alt="" srcset="" />
+        </div>
+      </div>
+      <!-- <div id="partners">
+        <div class="catchy">
+          <h4>We're just keep growing with <br />6.3k trusted companies</h4>
+          <p>
+            Nullam nec ipsum luctus, vehicula massa in, dicim <br />sapien.
+            Aenean quis luctus ert nulla quam augue.
+          </p>
+        </div>
+        <div></div>
+      </div> -->
+    </div>
+
+    <div id="collaboration">
+      <div class="content">
+        <div class="catchy">Uniting Forces for Biotech Excellence</div>
+        <div class="para">
+          TechMedZ thrives on collaboration, a nexus where ideas converge for
+          biotech brilliance. Join us in this journey of shared innovation,
+          where together, we shape a transformative path forward.<br />
+          Together, let's pioneer advancements that make a lasting impact on
+          healthcare worldwide !
+        </div>
+        <button id="collaborationBtn">Lets Work Together &rarr;</button>
+      </div>
+      <div class="services">
+        <div class="service" id="service1">
+          <h4 style="text-align: center">Focusing Sector</h4>
+          <br />
+          <p><i class="fas fa-check"></i> Medical Prototyping</p>
+          <p><i class="fas fa-check"></i> Cosmetology</p>
+          <p><i class="fas fa-check"></i> Dental Applications</p>
+          <p><i class="fas fa-check"></i> Bio Prosthetics</p>
+          <p><i class="fas fa-check"></i> Pharmaceutical Industry</p>
+        </div>
+        <!-- <div class="service" id="service2">
+          <h4>Product Design</h4>
+          <br />
+          <p>150+ Projects . 129+ Happy Customer</p>
+        </div> -->
+        <!-- <div class="service" id="service3">
+          <h4>User Interface Design</h4>
+          <br />
+          <p>150+ Projects . 129+ Happy Customer</p>
+        </div> -->
+      </div>
+    </div>
+
+    <div id="team">
+      <div class="starter">
+        <h1>Meet the individuals who breathe life into TechMedZ</h1>
+        <p>
+          Meet the individuals who breathe life into TechMedZ - a team where
+          passion meets brilliance, propelling us towards a future defined by
+          innovation and excellence. At TechMedZ Labs, our team is more than
+          colleagues. we're a symphony of innovation, harmonizing expertise to
+          compose the future of healthcare. Together, we navigate the frontier
+          of biotechnology, transforming challenges into breakthroughs, and
+          shaping a healthier world.
+        </p>
+      </div>
+      <div class="mentor">
+        <div class="vl">
+          <p>
+            Mr. Surendar Kannan, a distinguished professional with a Bachelor's
+            degree in Mechanical Engineering and an MBA, plays a crucial role as
+            the Mentor and Legal Advisor at TechMedZ Labs Private Limited, where
+            he leverages his extensive expertise to provide guidance and
+            strategic counsel to advance the company's objectives.
+          </p>
+        </div>
+        <img src="../asserts/Surendar Kannan.jpg" alt="" srcset="" />
+      </div>
+      <div class="team">
+        <div class="container my-3 py-5 text-center">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 pt-1">
+              <div class="card h-100">
+                <div class="card-body">
+                  <img
+                    class="img-fouild rounded w-75 mb-3"
+                    src="../asserts/Ravimukilan Mohankumar.png"
+                    alt="Sophie"
+                  />
+                  <h3>Mr. Ravimukilan Mohankumar</h3>
+                  <div class="about">
+                    Founder and the Chief Executive Officer overseeing Execution, Collaboration, and External Affairs.
+                  </div>
+                  <div class="d-flex flex-row justify-content-center">
+                    <div class="p-4">
+                      <a href="https://www.linkedin.com/in/ravimukilan-m?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+                    </div>
+                    <div class="p-4">
+                      <a href="mailto:ceo@techmedz.in">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+                    </div>
+                    <div class="p-4">
+                      <a href="https://instagram.com/ravimukilan_official?igshid=OGQ5ZDc2ODk2ZA==">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 pt-1">
+              <div class="card h-100">
+                <div class="card-body">
+                  <img
+                    class="img-fouild rounded w-75 mb-3"
+                    src="../asserts/Sai Sreeya Konjeti.jpg"
+                    alt="lucy"
+                  />
+                  <h3>Ms. Sai Sreeya Konjeti</h3>
+                  <div class="about">
+                    Co-Founder and the Chief
+                    Marketing Officer responsible for IT Infrastructure, Media, and Customer Affairs.
+                  </div>
+                  <div class="d-flex flex-row justify-content-center">
+                    <div class="p-4">
+                      <a href="https://www.linkedin.com/in/sai-sreeya-konjeti-7634461bb/">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+                    </div>
+                    <div class="p-4">
+                      <a href="mailto:cmo@techmedz.in">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+                    </div>
+                    <div class="p-4">
+                      <a href="https://instagram.com/sree_as_hinata?igshid=MzMyNGUyNmU2YQ==">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 pt-1">
+              <div class="card h-100">
+                <div class="card-body">
+                  <img
+                    class="img-fouild rounded w-75 mb-3"
+                    src="../asserts/Sweatha Kannan.jpg"
+                    alt="Brad"
+                  />
+                  <h3>Ms.Sweatha Kannan</h3>
+                  <div class="about">
+                    Co-Founder and the Chief Innovation Officer responsible for Technology Research and Innovation.
+                  </div> <br/>
+                  <div class="d-flex flex-row justify-content-center">
+                    <div class="p-4">
+                      <a href="https://www.linkedin.com/in/sweatha-k-m-45b443253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+                    </div>
+                    <div class="p-4">
+                      <a href="mailto:cio@techmedz.in">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+                    </div>
+                    <div class="p-4">
+                      <a href="https://instagram.com/swea1426?igshid=OGQ5ZDc2ODk2ZA==">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 pt-1">
+              <div class="card h-100">
+                <div class="card-body">
+                  <img
+                    class="img-fouild rounded w-75 mb-3"
+                    src="../asserts/Nandhini Padmanathan.jpg"
+                    alt="andres"
+                  />
+                  <h3>Ms.Nandhini Padmanathan</h3>
+                  <div class="about">
+                    Co-Founder and the Chief People Officer  overseeing Human Resources and Internal Affairs.
+                  </div>
+                  <div class="d-flex flex-row justify-content-center">
+                    <div class="p-4">
+                      <a href="https://www.linkedin.com/in/nandhini-padmanathan-422219256">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+                    </div>
+                    <div class="p-4">
+                      <a href="mailto:cpo@techmedz.in">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+                    </div>
+                    <div class="p-4">
+                      <a href="https://instagram.com/padmanandhini_padmanathan">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="end">
+      <div id="testimonials">
+        <section id="testim" class="testim">
+          <!--         <div class="testim-cover"> -->
+          <div class="wrap">
+            <span
+              id="right-arrow"
+              class="arrow right fa fa-chevron-right"
+            ></span>
+            <span id="left-arrow" class="arrow left fa fa-chevron-left"></span>
+            <ul id="testim-dots" class="dots">
+              <li class="dot active"></li>
+              <!--
+                              -->
+              <li class="dot"></li>
+              <!--
+                              -->
+              <li class="dot"></li>
+              <!--
+                              -->
+              <li class="dot"></li>
+              <!--
+                              -->
+              <li class="dot"></li>
+            </ul>
+            <div id="testim-content" class="cont">
+              <div class="active">
+                <!-- <div class="img"><img src="" alt=""></div> -->
+                <h2 style="font-size: xx-large">Mr.Surendar Kannan</h2>
+                <p>
+                  the technical expertise of techmedz has played a pivotal role
+                  in the success of the startup. I feel grateful to have been a
+                  part of the team and to be involved in the seamless exchange
+                  of ideas and projects.
+                </p>
+              </div>
+
+              <div>
+                <!--<div class="img"><img src="" alt=""></div>-->
+                <h2 style="font-size: xx-large">Dr. Kiran George</h2>
+                <p>
+                  I feel enthusiastic to share my insights about techmedz, The
+                  experience have been exceptional and am personally impressed
+                  by their unwavering commitment.
+                </p>
+              </div>
+
+              <div>
+                <!--<div class="img"><img src="" alt=""></div>-->
+                <h2 style="font-size: xx-large">
+                  Dr. Vijay Anand Sivapunniyam
+                </h2>
+                <p>
+                  Navigating the complex landscape of bioprinting as a startup
+                  can be daunting, but Techmedz has been a game-changer. Their
+                  tailored solutions and support have provided us with a
+                  competitive edge.
+                </p>
+              </div>
+
+              <div>
+                <!--<div class="img"><img src="" alt=""></div>-->
+                <h2 style="font-size: xx-large">Mr. Gokulakrishnan Sriram</h2>
+                <p>
+                  They are a strategic partner in advancing the frontiers of
+                  bioprinting research, it's been a pleasure working with them
+                  and am looking forward for further future collaborations.
+                </p>
+              </div>
+
+              <div>
+                <!--<div class="img"><img src="" alt=""></div>-->
+                <h2 style="font-size: xx-large">Dr.Dhanesh Babu</h2>
+                <p>
+                  In our efforts to provide cutting-edge education and training
+                  in bioprinting, Techmedz stands out as a leader in the field,
+                  contributing significantly to the educational landscape in
+                  bioprinting and proves it's position as a business icon.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div id="footer">
+        <p>&copy; 2023 TechMedZ Labs PVT.LTD</p>
+        <a href="https://www.linkedin.com/company/techmedz" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="tel:044-47757806"><i class="fas fa-phone"></i></a>
+        <a href="mailto:info@techmedz.in"><i class="fas fa-envelope"></i></a>
+        <a href="https://instagram.com/techmedzlabs" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <!-- <div class="techmedz">
+          <img src="../asserts/techmedz.jpg" />
+        <div class="intext">
+          <h5>TechMedz</h5>
+          <p>Connecting Lives</p>
+        </div>
+        </div>
+        
+        <div class="copyrights">
+          <p>@2023 TechMedZ PVT.LTD</p>
+        </div>
+
+        <div class="policies">
+          <p>Privacy Notice</p>
+          <p>Cookie Policy</p>
+          <p>Disclaimer</p>
+        </div> -->
+      </div>
+    </div>
+    <script src="https://use.fontawesome.com/1744f3f671.js"></script>
+    <script src="../js/aboutUs.js"></script>
+  </body>
+</html>
